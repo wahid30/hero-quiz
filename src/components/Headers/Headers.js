@@ -17,25 +17,25 @@ const Headers = () => {
         <nav>
           <Link
             to="/home"
-            className="mx-2 hover:text-indigo-800 hover:text-[20px]"
+            className="mx-2 hover:text-indigo-800 hover:text-[20px] ease-in-out duration-300"
           >
             Home
           </Link>
           <Link
             to="/topics"
-            className="mx-2  hover:text-indigo-800 hover:text-[20px]"
+            className="mx-2  hover:text-indigo-800 hover:text-[20px] ease-in-out duration-300"
           >
             Topics
           </Link>
           <Link
             to="/statistics"
-            className="mx-2  hover:text-indigo-800 hover:text-[20px]"
+            className="mx-2  hover:text-indigo-800 hover:text-[20px] ease-in-out duration-300"
           >
             Statistics
           </Link>
           <Link
             to="blogs"
-            className="mx-2  hover:text-indigo-800 hover:text-[20px]"
+            className="mx-2  hover:text-indigo-800 hover:text-[20px] ease-in-out duration-300"
           >
             Blogs
           </Link>
