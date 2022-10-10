@@ -15,16 +15,28 @@ const Headers = () => {
           </Link>
         </div>
         <nav>
-          <Link to="/home" className="mx-2">
+          <Link
+            to="/home"
+            className="mx-2 hover:text-indigo-800 hover:text-[20px]"
+          >
             Home
           </Link>
-          <Link to="/topics" className="mx-2">
+          <Link
+            to="/topics"
+            className="mx-2  hover:text-indigo-800 hover:text-[20px]"
+          >
             Topics
           </Link>
-          <Link to="/statistics" className="mx-2">
+          <Link
+            to="/statistics"
+            className="mx-2  hover:text-indigo-800 hover:text-[20px]"
+          >
             Statistics
           </Link>
-          <Link to="blogs" className="mx-2">
+          <Link
+            to="blogs"
+            className="mx-2  hover:text-indigo-800 hover:text-[20px]"
+          >
             Blogs
           </Link>
         </nav>
