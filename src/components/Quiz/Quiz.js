@@ -1,13 +1,18 @@
 // import React, { useState } from "react";
 import "./Quiz.css";
 import { EyeIcon } from "@heroicons/react/24/solid";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Quiz = ({ quiz }) => {
   const { question, options, correctAnswer } = quiz;
-  // console.log(correctAnswer);
-  // const [checkIcon, setCheckIcon] = useState(false);
-  // const handleIconClicked = () => {
-  //   // console.log(correctAnswer);
-  // };
+  const notify = (event) => {
+    let yourAnswer = event.target.innerHTML;
+    if (yourAnswer === correctAnswer) {
+      toast("Correct!!!");
+    } else {
+      toast("Wrong Answer!");
+    }
+  };
   return (
     <div>
       <div className="rounded-[10px] shadow-xl bg-green-100 my-5 p-5">
@@ -27,12 +32,15 @@ const Quiz = ({ quiz }) => {
         </div>
         <div className="p-3 flex flex-col">
           {options.map((option, idx) => (
-            <button
-              key={idx}
-              className="btn btn-outline btn-primary mt-2 custom-quiz"
-            >
-              {option}
-            </button>
+            <div key={idx}>
+              <button
+                onClick={notify}
+                className="btn btn-outline btn-primary mt-2 custom-quiz"
+              >
+                {option}
+              </button>
+              <ToastContainer />
+            </div>
           ))}
         </div>
       </div>
