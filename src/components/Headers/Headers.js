@@ -1,6 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { PencilSquareIcon } from "@heroicons/react/24/solid";
+import "./Headers.css";
 const Headers = () => {
   return (
     <div className="bg-indigo-300">
@@ -14,31 +15,39 @@ const Headers = () => {
             <h2 className="text-white">Hero Quiz</h2>
           </Link>
         </div>
-        <nav>
-          <Link
+        <nav className="custom-headers">
+          <NavLink
             to="/home"
-            className="mx-2 hover:text-indigo-800 hover:text-[20px] ease-in-out duration-300"
+            className={({ isActive }) =>
+              isActive ? "mx-2 text-red-600" : "mx-2"
+            }
           >
             Home
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/topics"
-            className="mx-2  hover:text-indigo-800 hover:text-[20px] ease-in-out duration-300"
+            className={({ isActive }) =>
+              isActive ? "mx-2 text-red-600" : "mx-2"
+            }
           >
             Topics
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/statistics"
-            className="mx-2  hover:text-indigo-800 hover:text-[20px] ease-in-out duration-300"
+            className={({ isActive }) =>
+              isActive ? "mx-2 text-red-600" : "mx-2"
+            }
           >
             Statistics
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="blogs"
-            className="mx-2  hover:text-indigo-800 hover:text-[20px] ease-in-out duration-300"
+            className={({ isActive }) =>
+              isActive ? "mx-2 text-red-600" : "mx-2"
+            }
           >
             Blogs
-          </Link>
+          </NavLink>
         </nav>
       </div>
     </div>

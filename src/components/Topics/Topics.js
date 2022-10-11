@@ -5,7 +5,7 @@ const Topics = () => {
   const topics = useLoaderData().data;
   // console.log(topics);
   return (
-    <div className="cart-container mt-10 px-10 py-5">
+    <div className="cart-container mt-10 px-10 py-5 mx-auto w-9/12">
       {topics.map((topic) => (
         <Topic key={topic.id} topic={topic}></Topic>
       ))}

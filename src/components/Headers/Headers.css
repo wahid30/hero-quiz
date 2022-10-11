@@ -1,0 +1,9 @@
+.custom-headers {
+  display: flex;
+}
+@media screen and (max-width: 570px) {
+  .custom-headers {
+    display: flex;
+    flex-direction: column;
+  }
+}
