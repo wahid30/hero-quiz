@@ -14,3 +14,9 @@
     gap: 10px;
   }
 }
+@media screen and (max-width: 570px) {
+  .custom-class {
+    display: flex;
+    flex-direction: column;
+  }
+}

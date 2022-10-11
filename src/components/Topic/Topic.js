@@ -9,7 +9,7 @@ const Topic = ({ topic }) => {
   };
   return (
     <div>
-      <div className="card card-side bg-base-100 shadow-xl">
+      <div className="card card-side bg-base-100 shadow-xl custom-class">
         <figure>
           <img className="bg-black custom-radius" src={logo} alt="Movie" />
         </figure>

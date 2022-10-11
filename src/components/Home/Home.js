@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div>
       <div className="bg-black h-[100vh] flex items-center justify-center">
-        <div className="flex items-center mx-auto w-[90%]">
+        <div className="flex items-center mx-auto w-[90%] custom-class">
           <div>
             <p className="text-white text-[18px]">
               ''Motivation is the process by which goal-oriented behaviors are

@@ -1,19 +1,26 @@
 import React from "react";
-
+import "./Quiz.css";
+import { EyeIcon } from "@heroicons/react/24/solid";
 const Quiz = ({ quiz }) => {
   const { question, options, correctAnswer } = quiz;
   // console.log(options);
   return (
     <div>
       <div className="rounded-[10px] shadow-xl bg-green-100 my-5 p-5">
-        <h2 className="font-bold">{question}</h2>
-        <div className="p-3">
+        <div className="flex justify-between items-center">
+          <h2 className="font-bold">{question}</h2>
+          <button>
+            <EyeIcon className="w-[20px] hover:text-blue-700"></EyeIcon>
+          </button>
+        </div>
+        <div className="p-3 flex flex-col">
           {options.map((option, idx) => (
-            <li key={idx}>
-              <button className="btn btn-outline btn-primary mt-2">
-                {option}
-              </button>
-            </li>
+            <button
+              key={idx}
+              className="btn btn-outline btn-primary mt-2 custom-quiz"
+            >
+              {option}
+            </button>
           ))}
         </div>
       </div>
