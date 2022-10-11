@@ -2,4 +2,8 @@
   .custom-quiz {
     font-size: 10px;
   }
+  .custom-class {
+    display: flex;
+    flex-direction: column;
+  }
 }

@@ -15,7 +15,7 @@ const Quiz = ({ quiz }) => {
   return (
     <div>
       <div className="rounded-[10px] shadow-xl bg-green-100 my-5 p-5">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center custom-class">
           <h2 className="font-bold">{question}</h2>
           <div className="collapse">
             <input type="checkbox" className="peer" />
