@@ -1,14 +1,9 @@
 import React from "react";
-import { useLoaderData, useNavigate } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import Quiz from "../Quiz/Quiz";
-
 const Quizes = () => {
   const quizes = useLoaderData().data.questions;
   const name = useLoaderData().data;
-  // console.log(name);
-  // const { id, name, questions } = quizes;
-  // console.log(questions);
-  // const navigate = useNavigate();
   return (
     <div className="mx-auto w-9/12 mt-10 ">
       <h2 className="text-center text-2xl text-indigo-700 font-bold">

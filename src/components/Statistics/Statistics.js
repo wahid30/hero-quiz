@@ -14,7 +14,6 @@ import {
 } from "recharts";
 const Statistics = () => {
   const data = useLoaderData().data;
-  // console.log(datas);
   return (
     <div className="mt-16" style={{ width: "100%", height: 300 }}>
       <ResponsiveContainer>

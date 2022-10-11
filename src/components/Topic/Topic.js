@@ -5,7 +5,7 @@ const Topic = ({ topic }) => {
   const { id, name, logo, total } = topic;
   const navigate = useNavigate();
   const handleNavigate = () => {
-    navigate(`/topic/${id}`);
+    navigate(`/quiz/${id}`);
   };
   return (
     <div>

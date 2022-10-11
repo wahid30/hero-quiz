@@ -1,5 +1,4 @@
 import React from "react";
-
 const ErrorMessage = () => {
   return (
     <div className="bg-indigo-100 mx-auto w-9/12 text-center mt-[200px] p-12 border border-indigo-900 rounded">

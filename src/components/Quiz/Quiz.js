@@ -1,4 +1,3 @@
-// import React, { useState } from "react";
 import "./Quiz.css";
 import { EyeIcon } from "@heroicons/react/24/solid";
 import { ToastContainer, toast } from "react-toastify";

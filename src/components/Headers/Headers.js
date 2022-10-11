@@ -17,14 +17,6 @@ const Headers = () => {
         </div>
         <nav className="custom-headers">
           <NavLink
-            to="/home"
-            className={({ isActive }) =>
-              isActive ? "mx-2 text-red-600" : "mx-2"
-            }
-          >
-            Home
-          </NavLink>
-          <NavLink
             to="/topics"
             className={({ isActive }) =>
               isActive ? "mx-2 text-red-600" : "mx-2"
