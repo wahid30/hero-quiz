@@ -9,7 +9,7 @@ const Quizes = () => {
   // console.log(questions);
   // const navigate = useNavigate();
   return (
-    <div>
+    <div className="mx-auto w-9/12 mt-10 ">
       {quizes.map((quiz) => (
         <Quiz key={quiz.id} quiz={quiz}></Quiz>
       ))}
